@@ -80,11 +80,11 @@ export default function Generator({
               }}
               key={typeIndex}
               className={
-                "bg-slate-950 border   duration-200 hover:border-blue-600  rounded-lg py-2 px-4 sm:mx-6 " +
+                "bg-slate-950 border   duration-200 hover:border-blue-600  rounded-lg py-2 px-4 sm:mx-2 " +
                 (type === poison ? "border-blue-600" : "border-blue-1000")
               }
             >
-              <p className=" sm:px-2 lg:text-1xl lg:py-3  lg:px-10 xl:px-10  xl:py-4 xl:py-2 sm:text-xl md:py-2 capitalize font-normal ">
+              <p className=" lg:text-1xl lg:py-3  lg:px-2 xl:px-2 xl:py-4 xl:py-2 sm:text-xl md:py-2 capitalize font-normal ">
                 {type.replaceAll("_", " ")}
               </p>
             </button>
