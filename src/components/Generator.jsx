@@ -43,7 +43,7 @@ export default function Generator({
       return;
     }
 
-    if (muscles.length > 2) {
+    if (muscles.length > 3) {
       return;
     }
 
@@ -60,7 +60,8 @@ export default function Generator({
   let text = "Formulate";
 
   return (
-    <SectionWrapper id={'generate'}
+    <SectionWrapper
+      id={"generate"}
       header={"generate your workout"}
       title={["It's", "Huge", "o'clock"]}
     >
@@ -81,7 +82,7 @@ export default function Generator({
               key={typeIndex}
               className={
                 "bg-slate-950 border   duration-200 hover:border-blue-600  rounded-lg py-2 px-4 sm:mx-2 " +
-                (type === poison ? "border-blue-600" : "border-blue-1000")
+                (type === poison ? "border-blue-600" : "")
               }
             >
               <p className=" lg:text-1xl lg:py-3  lg:px-2 xl:px-2 xl:py-4 xl:py-2 sm:text-xl md:py-2 capitalize font-normal ">
@@ -117,6 +118,7 @@ export default function Generator({
                 <button
                   onClick={() => {
                     updateMuscles(muscleGroup);
+                    console.log(muscleGroup);
                   }}
                   key={muscleGroupIndex}
                   className={
@@ -147,7 +149,7 @@ export default function Generator({
               key={schemeIndex}
               className={
                 "bg-slate-950 border   duration-200 hover:border-blue-600  rounded-lg py-2 px-4 sm:mx-6 " +
-                (scheme === goals ? "border-blue-600" : "border-blue-1000")
+                (scheme === goals ? "border-blue-600" : "")
               }
             >
               <p className=" sm:px-2 lg:text-1xl lg:py-3  lg:px-10 xl:px-10  xl:py-4 xl:py-2 sm:text-xl md:py-2 capitalize font-normal ">
