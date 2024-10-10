@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function SectionWrapper({ children, header, title, id }) {
-  return <section id={id} className="min-h-screen flex flex-col gap-10 ">
+  return (<section id={id} className="min-h-screen flex flex-col gap-10 ">
 
     <div className="bg-slate-950 py-8 flex flex-col gap-4  items-center  justify-center ">
         <p className="uppercase font-medium ">  {header}</p>
@@ -11,5 +11,5 @@ export default function SectionWrapper({ children, header, title, id }) {
     {children}
 
     </div>
-  </section>;
+  </section>)
 }
